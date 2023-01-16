@@ -1,0 +1,36 @@
+/* .probandoAgregarClases {
+  background-color: bisque;
+}
+
+.nuevaClase {
+  background-color: royalblue;
+} */
+
+/* Segunda parte */
+#contenedorProductos, .itemCarrito {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .producto {
+    margin: 2px;
+    height: 350px;
+    width: 350px;
+  }
+  
+  /*.pocoStock {
+    background-color: aqua;
+  }*/
+  
+  .producto img {
+    width: 50%;
+  }
+  
+  #contenedorCarrito {
+    border: 2px solid black;
+    min-height: 100px;
+  }
+  
+  .itemCarrito * {
+    margin: 5px
+  }
