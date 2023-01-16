@@ -1,32 +1,3 @@
-/*let productos = [
-    { id: 1, nombre: "Short", categoria: "ropa", precio: "5600", stock: 6 },
-    { id: 2, nombre: "Celular", categoria: "tecnologia", precio: "78000", stock: 5 },
-    { id: 3, nombre: "Remera", categoria: "ropa", precio: "7500", stock: 12 },
-    { id: 4, nombre: "Notebook", categoria: "tecnologia", precio: "150000", stock: 3 },
-]
-
-productos.sort((a, b) => a.precio - b.precio)
-console.log(productos)
-
-let salida = ""
-productos.forEach(producto => {
-    //salida = salida + producto.id + " - " + producto.nombre + "\n"
-    salida += producto.id + " - " + producto.nombre + "\n"
-    //salida += "${producto.id} - ${producto.nombre}\n"
-})
-alert(salida)
-*/
-
-
-
-
-/* let boton = document.getElementById("boton")
-// boton.addEventListener("click", mostrarAlert)
-boton.onclick = mostrarAlert */
-/* function mostrarAlert() {
-  alert("HIZO CLICK")
-} */
-
 let productos = [
     { id: 1, nombre: "arcoiris", categoria: "didactico", precio: 8000, stock: 5, imgUrl: "./img/arcoiris.jpg" },
     { id: 2, nombre: "autito", categoria: "juguete", precio: 2000, stock: 6, imgUrl: "./img/autito.jpg" },
@@ -94,7 +65,7 @@ let productos = [
       carrito[posicionProducto].unidades++
       carrito[posicionProducto].subtotal = carrito[posicionProducto].precio * carrito[posicionProducto].unidades
     } else {
-      // tiene todas las propiedades de antes + unidades y subtotal
+      
       productoBuscado.unidades = 1
       productoBuscado.subtotal = productoBuscado.precio
       carrito.push(productoBuscado)
