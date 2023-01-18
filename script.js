@@ -23,7 +23,7 @@ let productos = [
     if (buscador.value) {
       productosFiltrados = productos.filter(producto => producto.nombre.toLowerCase().includes(buscador.value.toLowerCase()) || producto.categoria.toLowerCase().includes(buscador.value.toLowerCase()))
     } else if (inputMin.value && inputMax.value) {
-      productosFiltrados = productos.filter(producto => producto.precio > Number(inputMin.value) && producto.precio < Number(inputMax.value))
+      productosFiltrados = productos.filter(producto => producto.precio >= Number(inputMin.value) && producto.precio <= Number(inputMax.value))
     }
     renderizarProductos(productosFiltrados)
   }
@@ -88,9 +88,7 @@ let productos = [
     })
   }
   
-  //let ropa = document.getElementById("ropa")
-  //ropa.onclick = filtrarPorCategoria
-  
+ 
   function filtrarPorCategoria(e) {
     let productosFiltrados = productos.filter(producto => producto.categoria === e.target.id)
     renderizarProductos(productosFiltrados)
